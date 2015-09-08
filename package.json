@@ -2,19 +2,8 @@
   "name": "cordova-plugin-device",
   "version": "0.1.0",
   "description": "Cordova Parse Plugin",
-  "cordova": {
-    "id": "cordova-plugin-parse",
-    "platforms": [
-      "ios"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ifabijanovic/cordova-plugin-parse"
-  },
-  "keywords": [
-    "cordova",
-    "parse"
-  ],
-  "author": "ShoutEm Inc.",
+  }
 }
