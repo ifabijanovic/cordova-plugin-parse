@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-parse" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-parse</name>
+
+    <js-module name="cordova-plugin-parse" src="www/cordova-plugin-parse.js">
+        <clobbers target="plugins.parse" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="cordova-plugin-parse">
+                <param name="ios-package" value="cordova-plugin-parse" />
+            </feature>
+        </config-file>
+
+        <framework src="Accounts.framework" />
+        <framework src="AudioToolbox.framework" />
+        <framework src="CFNetwork.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="CoreLocation.framework" />
+        <framework src="MobileCoreServices.framework" />
+        <framework src="QuartzCore.framework" />
+        <framework src="Security.framework" />
+        <framework src="Social.framework" />
+        <framework src="StoreKit.framework" />
+        <framework src="SystemConfiguration.framework" />
+
+        <framework src="libz.dylib" />
+        <framework src="libsqlite3.dylib" />
+
+        <framework src="platforms/ios/libs/Bolts.framework" custom="true" />
+        <framework src="platforms/ios/libs/Parse.framework" custom="true" />
+
+        <header-file src="platforms/ios/src/CDVParsePlugin.h" />
+        <source-file src="platforms/ios/src/CDVParsePlugin.m" />
+
+    </platform>
+</plugin>
