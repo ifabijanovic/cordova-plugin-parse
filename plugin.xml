@@ -33,6 +33,8 @@
 
         <header-file src="platforms/ios/src/ParsePushPlugin.h" />
         <source-file src="platforms/ios/src/ParsePushPlugin.m" />
+        <header-file src="platforms/ios/src/ParsePushAppDelegateProxy.h" />
+        <source-file src="platforms/ios/src/ParsePushAppDelegateProxy.m" />
 
     </platform>
 </plugin>
