@@ -9,7 +9,7 @@
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
             <feature name="cordova-plugin-parse">
-                <param name="ios-package" value="cordova-plugin-parse" />
+                <param name="ios-package" value="CDVParsePlugin" />
             </feature>
         </config-file>
 
