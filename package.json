@@ -1,7 +1,7 @@
 {
-  "name": "cordova-plugin-device",
+  "name": "cordova-parse-push",
   "version": "0.1.0",
-  "description": "Cordova Parse Plugin",
+  "description": "Cordova Parse Push Plugin",
   "repository": {
     "type": "git",
     "url": "https://github.com/ifabijanovic/cordova-plugin-parse"

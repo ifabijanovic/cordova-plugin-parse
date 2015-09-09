@@ -1,15 +1,15 @@
 //
-//  CDVParsePlugin.m
+//  ParsePushPlugin.m
 //
 //
 //  Created by Ivan Fabijanovic on 08/09/15.
 //
 //
 
-#import "CDVParsePlugin.h"
+#import "ParsePushPlugin.h"
 #import <Parse/Parse.h>
 
-@implementation CDVParsePlugin
+@implementation ParsePushPlugin
 
 #pragma mark - Plugin methods
 
