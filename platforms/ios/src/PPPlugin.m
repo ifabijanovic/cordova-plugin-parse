@@ -81,8 +81,8 @@
         CDVPluginResult *result = nil;
         
         if (!error) {
-            NSArray *channels = [object objectForKey:@"@channels"];
-            result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:channels];
+            PFInstallation *installation = (PFInstallation *)object;
+            result = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:installation.channels];
         } else {
             result = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:[error description]];
         }
