@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="parsePush" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="cordova-parse-push" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-parse-push</name>
 
-    <js-module name="parsePush" src="www/parsePush.js">
+    <js-module name="cordova-parse-push" src="www/parsePush.js">
         <clobbers target="plugins.parse.push" />
     </js-module>
 
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="parsePush">
+            <feature name="cordova-parse-push">
                 <param name="ios-package" value="PPPlugin" />
             </feature>
         </config-file>
