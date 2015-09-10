@@ -1,5 +1,5 @@
 {
-  "name": "cordova-parse-push",
+  "name": "parsePush",
   "version": "0.1.0",
   "description": "Cordova Parse Push Plugin",
   "repository": {

@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-parse-push" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+<plugin id="parsePush" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>cordova-parse-push</name>
 
-    <js-module name="cordova-parse-push" src="www/parsePush.js">
+    <js-module name="parsePush" src="www/parsePush.js">
         <clobbers target="plugins.parse.push" />
     </js-module>
 
     <platform name="ios">
         <config-file parent="/*" target="config.xml">
-            <feature name="cordova-parse-push">
-                <param name="ios-package" value="ParsePushPlugin" />
+            <feature name="parsePush">
+                <param name="ios-package" value="PPPlugin" />
             </feature>
         </config-file>
 
@@ -31,10 +31,10 @@
         <framework src="platforms/ios/libs/Bolts.framework" custom="true" />
         <framework src="platforms/ios/libs/Parse.framework" custom="true" />
 
-        <header-file src="platforms/ios/src/ParsePushPlugin.h" />
-        <source-file src="platforms/ios/src/ParsePushPlugin.m" />
-        <header-file src="platforms/ios/src/ParsePushAppDelegateProxy.h" />
-        <source-file src="platforms/ios/src/ParsePushAppDelegateProxy.m" />
+        <header-file src="platforms/ios/src/PPPlugin.h" />
+        <source-file src="platforms/ios/src/PPPlugin.m" />
+        <header-file src="platforms/ios/src/PPAppDelegateProxy.h" />
+        <source-file src="platforms/ios/src/PPAppDelegateProxy.m" />
 
     </platform>
 </plugin>
